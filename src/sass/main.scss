@@ -20,3 +20,12 @@ body{
     font-size: 10px;
     overflow-x: hidden;
 }
+
+@import 'header.scss';
+
+
+
+@import 'gallery.scss';
+@import 'our-chef.scss';
+@import 'our-blog.scss';
+@import 'footer.scss';

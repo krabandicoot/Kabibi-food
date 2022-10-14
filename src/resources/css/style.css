@@ -429,6 +429,7 @@ header img {
 }
 .category ul {
   display: flex;
+  flex-direction: column;
   column-gap: 30px;
   padding: 5px;
   margin-top: 80px;
@@ -441,7 +442,7 @@ header img {
   align-items: center;
   flex-direction: column;
   row-gap: 5px;
-  margin: auto;
+  margin: 10px;
   background-color: #ffffff;
   width: 150px;
   height: 200px;

@@ -1,0 +1,22 @@
+/* ---------- FONT ---------- */
+/* Import */
+
+@font-face {
+    font-family: Forum;
+    src: url(../font/Forum-Regular.otf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../font/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: Bellefair;
+    src: url(../font/Bellefair-Regular.ttf);
+}
+
+@import 'variable.scss';
+
+body{
+    font-size: 10px;
+    overflow-x: hidden;
+}

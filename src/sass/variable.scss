@@ -1,0 +1,43 @@
+/* ---------- VARIABLES ---------- */
+/* Color */
+$gold : #c8a96a;
+$darker-beige: #f5eee3;
+$grey: #899299; 
+$dark: #1d1d1d;
+$white: #ffffff;
+
+/* Background color */
+$background-dark: #1b191a;
+$background-beige: #faf6f0;
+
+/* Font size */
+$font-size-h2: 10rem;
+$font-size-h3: 2.5rem;
+$font-size-h4: 1.5rem;
+$font-family-title: Forum;
+$font-family-subtitle: Montserrat;
+$font-family-Bellefair: Bellefair;
+
+/* ---------- MIXIN ---------- */
+@mixin h2-properties{
+    font-family: $font-family-title;
+    font-size: $font-size-h2;
+    opacity: 5%;
+    text-transform: uppercase;
+    position: relative;
+    width: 6em;
+    font-weight: 100;
+    font-size: 1000%;
+    line-height: 1.5;
+    width: 6em;
+    opacity: 0.1;
+    position: relative;
+    text-transform: uppercase;
+} 
+@mixin h3-properties{
+    font-family: $font-family-title;
+    font-size: $font-size-h3;
+    text-transform: uppercase;
+    margin-top: -130px;
+    margin-bottom: 30px;
+}

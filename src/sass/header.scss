@@ -1,0 +1,246 @@
+@import 'variable.scss';
+
+/* HEADER */
+
+header{
+    background:linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(178,240,233,0) 100%), url(../images/img_bg_slider_home01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 150px;
+    // background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0));
+    font-size: 1rem;
+    color: $white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    h1{
+        display: none;
+    }
+    .header__logo{
+        width: 150px;
+    }
+    img{
+        width: 30px;
+    }
+}
+.little-arrow{
+    width: 20px;
+}
+
+.section-nav{
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 70px;
+    a{
+        text-decoration: none;
+        color: $white;
+    }
+    .section-nav__phone-number{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30%;
+    }
+    .section-nav__btn-book-table{
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        a{
+            background: $gold;
+            border-radius: 5px;
+            padding: 15px 20px;
+            padding-right: 50px;
+        }
+        img{
+            position: relative;
+            right: 50px;
+        }
+    }
+}
+.section-nav__main-nav{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    margin-left: 100px;
+    li{
+        padding: 0 15px;
+    }
+    a{
+        font-weight: 100;
+    }
+    .main-nav--active{
+        color: $gold;
+    }
+    
+}
+
+.menu-hamburger{
+    z-index: 3;
+    display: none;
+    width: 50px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+
+.header__content{
+    margin-left: 150px;
+    margin-top: 100px;
+    p{
+        font-size: 8rem;
+        line-height: 9rem;
+        text-transform: uppercase;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+.header__content__img{
+    position: absolute;
+    width: 150px;
+    left: 500px;
+    top: 150px;
+}
+
+.btn-explore-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    a{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $white;
+        border: 1px solid $grey;
+        border-radius: 5px;
+        padding: 15px 20px;
+        padding-right: 50px;
+    }
+    .little-arrow{
+        position: relative;
+        right: 50px;
+    }
+}
+.play-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 500px;
+    right: 80px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid $white;
+    border-radius: 1000px;
+    .play-btn-img{
+        width: 100px;
+    }
+}
+
+@media (max-width: 1460px){
+    .section-nav .section-nav__phone-number{
+        margin-left: 10%;
+    }
+    .header__content__img{
+        width: 130px;
+        left: 450px;
+        top: 130px;
+    }
+}
+@media (max-width: 1150px){
+    .header__content p{
+        font-size: 7rem;
+        line-height: 7rem;
+    }
+    .section-nav .section-nav__phone-number{
+        margin-left: 0;
+    }
+    .section-nav__btn-book-table{
+        position: absolute;
+        top: 580px;
+        left: 130px;
+    }
+    .section-nav__phone-number{
+        position: absolute;
+        top: 640px;
+        left: 145px;
+    }
+}
+@media (max-width: 700px){
+    .header__content__img{
+        width: 100px;
+        left: 300px;
+        top: 100px;
+    }
+    .header__logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .section-nav{
+        flex-direction: column;
+        padding: 0;
+    }
+    .section-nav .section-nav__phone-number{
+        margin-left: 0;
+    }
+    .section-nav__main-nav{
+        z-index: 2;
+        position: absolute;
+        right: -250px;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        background-color: $background-dark;
+        width: 250px;
+        height: 100vh;
+        transition: all 0.3s ease-in-out;
+        li{
+            margin: 15px;
+        }
+        li:nth-child(1){
+            margin-top: 60px;
+        }
+    }
+    .header__content{
+        margin-left: 50px;
+        margin-top: 70px;
+    }
+    .header__content p{
+        font-size: 5rem;
+        line-height: 6rem;
+    }
+    .menu-hamburger{
+        display: block;
+    }
+    .section-nav__btn-book-table{
+        position: absolute;
+        top: 500px;
+        left: 30px;
+    }
+    .section-nav__phone-number{
+        position: absolute;
+        top: 560px;
+        left: 45px;
+    }
+    .play-btn{
+        top: 430px;
+        right: 50px;
+        width: 120px;
+        height: 120px;
+        border: 1px solid $white;
+        border-radius: 1000px;
+        .play-btn-img{
+            width: 80px;
+        }
+    }
+}
+
+.mobile-menu{
+    position: absolute;
+    right: 0;
+}

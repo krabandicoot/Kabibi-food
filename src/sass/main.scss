@@ -21,6 +21,11 @@ body{
     overflow-x: hidden;
 }
 
+@import 'header.scss';
 @import 'about-us.scss';
 @import 'category.scss';
 @import 'special-offers.scss';
+@import 'gallery.scss';
+@import 'our-chef.scss';
+@import 'our-blog.scss';
+@import 'footer.scss';

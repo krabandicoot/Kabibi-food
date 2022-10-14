@@ -3,137 +3,380 @@
   <head>
     <meta charset="UTF-8">
     <title>My Website</title>
-	<link rel="stylesheet" href="./resources/css/reset.css">
+	  <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css">
   </head>
   <body>
-     <header class="head">
-      <nav class="navigation"></nav>
-     </header>
-     <main>
+     <!-- HEADER -->
+    <header class="header">
+      <nav class="section-nav">
+        <h1>Kababi</h1>
+        <img class="header__logo" src="./resources/images/logo.png">
+        <ul class="section-nav__main-nav">
+          <li><a href="#" class="main-nav--active">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Page</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <img src="./resources/images/icon-menu.svg" class="menu-hamburger">
+        <div class="section-nav__phone-number">
+          <img src="./resources/images/icon-telephone.svg">
+          <p>+012(345)6789</p>
+        </div>
+        <div class="section-nav__btn-book-table">
+          <a href="#">Book a table</a>
+          <img class="little-arrow" src="./resources/images/icon-arrow.svg">
+        </div>
+      </nav>
+      <div class="header__content">
+        <img src="./resources/images/img_bg2.png" class="header__content__img">
+        <p>Best<br> quality<br> foods</p>
+        <div class="btn-explore-menu">
+          <a href="#">Explore our menu</a>
+          <img class="little-arrow" src="./resources/images/icon-arrow.svg">
+        </div>
+        <div class="play-btn"></div>
+      </div>
+      <div class="play-btn">
+        <img src="./resources/images/icon-play.svg" class="play-btn-img">
+      </div>
+    </header>
+    <!-- MAIN -->
+    <main>
       <!-- CATEGORY -->
-        <section class="category">
-          <h2>Category</h2>
-          <h3>Choose your best category</h3>
+      <section class="category">
+        <h2>Category</h2>
+        <h3>Choose your best category</h3>
+        <p>Best foods for you & family</p>
+        <ul>
+          <li>
+            <img alt="Cheeseburger icon" src="../src/resources/images/icon-hamburger.svg">
+            <h4>Cheeseburger</h4>
+            <img alt="arrow to the right" src="../src/resources/images/icon-arrow-right.svg">
+          </li>
+          <li>
+            <img alt="Pizza icon" src="../src/resources/images/icon-pizza.svg">
+            <h4>Pizza Slice</h4>
+            <img alt="arrow to the right" src="../src/resources/images/icon-arrow-right.svg">
+          </li>
+          <li>
+            <img alt="Coffee cup icon" src="../src/resources/images/icon-coffee.svg">
+            <h4>Coffee-Cup</h4>
+            <img alt="arrow to the right" src="../src/resources/images/icon-arrow-right.svg">
+          </li>
+          <li>
+            <img alt="Chicken drumstick icon" src="../src/resources/images/icon-chicken.svg">
+            <h4>Chicken-Leg</h4>
+            <img alt="arrow to the right" src="../src/resources/images/icon-arrow-right.svg">
+          </li>
+          <li>
+            <img alt="Drink with fruits icon" src="../src/resources/images/icon-energy-drink.svg">
+            <h4>Energy Drink</h4>
+            <img alt="arrow to the right" src="../src/resources/images/icon-arrow-right.svg">
+          </li>
+          <li>
+            <img alt="Schrimp icon" src="../src/resources/images/icon-shrimp.svg">
+            <h4>Shrimp </h4>
+            <img alt="arrow to the right" src="../src/resources/images/icon-arrow-right.svg">
+          </li>  
+        </ul>
+      </section>
+      <!-- ABOUT US -->
+      <section class="about_us">
+          <div class="about_us_imgzone">
+            <img class="img_crepe" alt="Crepes plate" src="../src/resources/images/img-crepes.png">
+            <img class="img_salad" alt="Salad bowl" src="../src/resources/images/img-salad.jpeg">
+            <img class="img_egg" alt="Five eggs on a cloath" src="../src/resources/images/img-eggs.png">
+          </div>
+          <div class="about_us_textzone">
+            <h2>About us</h2>
+            <h3>Why choose us</h3>
+            <p>Best foods for you & family</p>
+            <img class="about_us_logo" alt="Label written 'Best quality foods'" src="../src/resources/images/icon-about_us.png">
+            <div class="about_us_description">
+              <img class="about_us_employee" alt="Employee serving a plate" src="../src/resources/images/img-about_us.jpeg">
+              <div class="about_us_description_text">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusatium doloremque laudantium totam apeam eaque ipsa quae abillo invtore verittis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quiluptas</p>
+                <a rel="Description about restaurant" href="#"><button>Discover More<img alt="arrow to the right" src="../src/resources/images/icon-arrow-right.svg"></button></a>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- SPECIAL OFFERS -->
+      <section class="special_offers">
+        <div class="special_offers_titles">
+          <h2>Our menu</h2>
+          <h3>Try our special offer</h3>
+          <p>Best goods for you & family</p>
+          <img class="special_offers_bread" alt="all grains bread"src="../src/resources/images/img-our-menu_bread.jpeg">
+          <img class="special_offers_meat" alt="raw rib steak" src="../src/resources/images/img-our-menu_meat.jpeg">
+        </div>
+        <div class="special_food">
+          <dl >
+            <div class="special_food_cards">
+              <dt>Raw Scallops From Erquy</dt>
+              <dd>Candied Jerusalem artichokes, truffle</dd>
+              <p class="dollar-value">$89</p>
+            </div>
+            
+            <div class="special_food_cards">
+              <dt>Celeriac and Truffle Ravioli</dt>
+              <dd>Roasted langoustine, consommé</dd>
+              <p class="dollar-value">$89</p>
+            </div>
+
+            <div class="special_food_cards">
+              <dt>Cod Filet Cooked on One Side</dt>
+              <dd>Chorizo, chickpea espuma, pequillos</dd>
+              <p class="dollar-value">$89</p>
+            </div>
+
+            <div class="special_food_cards">
+              <dt>Sea Bass Ceviche</dt>
+              <dd>Avocado, butternut, lime</dd>
+              <p class="dollar-value">$89</p>
+            </div>
+            
+            <div class="special_food_cards">
+              <dt>Corrèze Pan-seared Veal Liver</dt>
+              <dd>Olive oil mashed potato, onion jus</dd>
+              <p class="dollar-value">$89</p>
+            </div>
+    
+            <div class="special_food_cards">
+              <dt>Grilled Veal Filet Mignon</dt>
+              <dd>Pumpkin, endives with hazelnuts</dd>
+              <p class="dollar-value">$89</p>
+            </div>
+            
+            <div class="special_food_cards">
+              <dt>Tender Octopus and Fennel</dt>
+              <dd>Citrus, wild rocket condiment</dd>
+              <p class="dollar-value">$89</p>
+            </div>
+            
+            <div class="special_food_cards">
+              <dt>Viennese Veal Cutlet</dt>
+              <dd>Ricotta and spinach gnocchi, Caccio de Pepe</dd>
+              <p class="dollar-value">$89</p>
+            </div>
+          </dl>
+        </div>
+      </section>
+      <!-- GALLERY -->
+      <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery__header">
+          <h3>Restaurants photo Gallery</h3>
           <p>Best foods for you & family</p>
-          <ul>
-            <li>
-              <img alt="Cheeseburger icon" src="../src/resources/images/icon-hamburger.svg">
-              <h4>Cheeseburger</h4>
-              <img alt="arrow to the right" src="../src/resources/images/icon-arrow-right.svg">
-            </li>
-            <li>
-              <img alt="Pizza icon" src="../src/resources/images/icon-pizza.svg">
-              <h4>Pizza Slice</h4>
-              <img alt="arrow to the right" src="../src/resources/images/icon-arrow-right.svg">
-            </li>
-            <li>
-              <img alt="Coffee cup icon" src="../src/resources/images/icon-coffee.svg">
-              <h4>Coffee-Cup</h4>
-              <img alt="arrow to the right" src="../src/resources/images/icon-arrow-right.svg">
-            </li>
-            <li>
-              <img alt="Chicken drumstick icon" src="../src/resources/images/icon-chicken.svg">
-              <h4>Chicken-Leg</h4>
-              <img alt="arrow to the right" src="../src/resources/images/icon-arrow-right.svg">
-            </li>
-            <li>
-              <img alt="Drink with fruits icon" src="../src/resources/images/icon-energy-drink.svg">
-              <h4>Energy Drink</h4>
-              <img alt="arrow to the right" src="../src/resources/images/icon-arrow-right.svg">
-            </li>
-            <li>
-              <img alt="Schrimp icon" src="../src/resources/images/icon-shrimp.svg">
-              <h4>Shrimp </h4>
-              <img alt="arrow to the right" src="../src/resources/images/icon-arrow-right.svg">
-            </li>  
-          </ul>
-        </section>
-        <!-- ABOUT US -->
-        <section class="about_us">
-            <div class="about_us_imgzone">
-              <img class="img_crepe" alt="Crepes plate" src="../src/resources/images/img-crepes.png">
-              <img class="img_salad" alt="Salad bowl" src="../src/resources/images/img-salad.jpeg">
-              <img class="img_egg" alt="Five eggs on a cloath" src="../src/resources/images/img-eggs.png">
+        </div>
+        <div class="gallery__content">
+          
+          <!-- item 1 -->
+          <div class="gallery__content__item">
+            <img src="./resources/images/gallery1.jpg" alt="A pan with some foods" class="gallery__item--hover">
+            <div class="gallery__item--hide">
+              <h4>Family Package Dish</h4>
+              <p>Popular Food Package</p>
             </div>
-            <div class="about_us_textzone">
-              <h2>About us</h2>
-              <h3>Why choose us</h3>
-              <p>Best foods for you & family</p>
-              <img class="about_us_logo" alt="Label written 'Best quality foods'" src="../src/resources/images/icon-about_us.png">
-              <div class="about_us_description">
-                <img class="about_us_employee" alt="Employee serving a plate" src="../src/resources/images/img-about_us.jpeg">
-                <div class="about_us_description_text">
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusatium doloremque laudantium totam apeam eaque ipsa quae abillo invtore verittis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quiluptas</p>
-                  <a rel="Description about restaurant" href="#"><button>Discover More<img alt="arrow to the right" src="../src/resources/images/icon-arrow-right.svg"></button></a>
-                </div>
+          </div>
+          
+          <!-- item 2 -->
+          <div class="gallery__content__item">
+            <img src="./resources/images/gallery2.jpg" alt="Some sandwiches on a plate" class="gallery__item--hover">
+            <div class="gallery__item--hide">
+              <h4>Family Package Dish</h4>
+              <p>Popular Food Package</p>
+            </div>
+          </div>
+          
+          <!-- item 3 -->
+          <div class="gallery__content__item">
+            <img src="./resources/images/gallery3.jpg" alt="A cut pizza" class="gallery__item--hover">
+            <div class="gallery__item--hide">
+              <h4>Family Package Dish</h4>
+              <p>Popular Food Package</p>
+            </div>
+          </div>
+          
+          <!-- item 4 -->
+          <div class="gallery__content__item">
+            <img src="./resources/images/gallery4.jpg" alt="Some pasta in a pan" class="gallery__item--hover">
+            <div class="gallery__item--hide">
+              <h4>Family Package Dish</h4>
+              <p>Popular Food Package</p>
+            </div>
+          </div>
+
+          <!-- item 5 -->
+          <div class="gallery__content__item">
+            <img src="./resources/images/gallery5.jpg" alt="A meat on a table" class="gallery__item--hover">
+            <div class="gallery__item--hide">
+              <h4>Family Package Dish</h4>
+              <p>Popular Food Package</p>
+            </div>
+          </div>
+          
+          <!-- item 6 -->
+          <div class="gallery__content__item">
+            <img src="./resources/images/gallery6.jpg" alt="An hambuger and fries" class="gallery__item--hover">
+            <div class="gallery__item--hide">
+              <h4>Family Package Dish</h4>
+              <p>Popular Food Package</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="gallery__view-more-photos">
+          <a href="#">View more photos</a>
+        </div>
+        
+      </section>
+      <!-- OUR CHEF -->
+      <section class="our-chef">
+        <h2>Our chef</h2>
+        <div class="our-chef__header">
+          <h3>Meet professional chefs</h3>
+          <p>Best foods for you & family</p>
+        </div>
+        <div class="our-chef__content">
+          <img src="./resources/images/our-chef1.jpg" alt="A chef is smilling to the camera.">
+          <img src="./resources/images/our-chef2.jpg" alt="A chef is not looking at the camera.">
+          <img src="./resources/images/our-chef3.jpg" alt="A chef is smilling at the camera with a knife.">
+          <img src="./resources/images/our-chef4.jpg" alt="A chef is holding a pan and a spoon.">
+        </div>
+      </section>
+      <!-- OUR BLOG -->
+      <section class="our-blog">
+        <h2>Our blog</h2>
+        <div class="our-blog__header">
+          <h3>Latest news & blog</h3>
+          <p>Best foods for you & family</p>
+        </div>
+        <div class="our-blog__section-article">
+          <article class="our-blog__article">
+            <img src="./resources/images/our-blog3.jpg" alt="A man is writing  on a paper.">
+            <div class="our-blog__article__author">
+              <div>
+                <img src="./resources/images/icon-author.svg">
+                <p>By Williamson</p>
+              </div>
+              <div>
+                <img src="./resources/images/icon-calendar.svg">
+                <p>25 aug 2021</p>
               </div>
             </div>
-        </section>
-        <!-- SPECIAL OFFERS -->
-        <section class="special_offers">
-          <div class="special_offers_titles">
-            <h2>Our menu</h2>
-            <h3>Try our special offer</h3>
-            <p>Best goods for you & family</p>
-            <img class="special_offers_bread" alt="all grains bread"src="../src/resources/images/img-our-menu_bread.jpeg">
-            <img class="special_offers_meat" alt="raw rib steak" src="../src/resources/images/img-our-menu_meat.jpeg">
-          </div>
-          <div class="special_food">
-            <dl >
-              <div class="special_food_cards">
-                <dt>Raw Scallops From Erquy</dt>
-                <dd>Candied Jerusalem artichokes, truffle</dd>
-                <p class="dollar-value">$89</p>
+            <h4>How To Run A UX Audit For Major EdTech Platform Case Study</h4>
+            <a href="#">Read More</a>
+          </article>
+          <article class="our-blog__article">
+            <img src="./resources/images/our-blog1.jpg" alt="A couple is eating together.">
+            <div class="our-blog__article__author">
+              <div>
+                <img src="./resources/images/icon-author.svg">
+                <p>By Williamson</p>
               </div>
-              
-              <div class="special_food_cards">
-                <dt>Celeriac and Truffle Ravioli</dt>
-                <dd>Roasted langoustine, consommé</dd>
-                <p class="dollar-value">$89</p>
+              <div>
+                <img src="./resources/images/icon-calendar.svg">
+                <p>25 aug 2021</p>
               </div>
-
-              <div class="special_food_cards">
-                <dt>Cod Filet Cooked on One Side</dt>
-                <dd>Chorizo, chickpea espuma, pequillos</dd>
-                <p class="dollar-value">$89</p>
+            </div>
+            <h4>How To Run A UX Audit For Major EdTech Plateform Case Study</h4>
+            <a href="#">Read more</a>
+          </article>
+          <article class="our-blog__article">
+            <img src="./resources/images/our-blog2.jpg" alt="A girl is eating some pastas.">
+            <div class="our-blog__article__author">
+              <div>
+                <img src="./resources/images/icon-author.svg">
+                <p>By Williamson</p>
               </div>
-
-              <div class="special_food_cards">
-                <dt>Sea Bass Ceviche</dt>
-                <dd>Avocado, butternut, lime</dd>
-                <p class="dollar-value">$89</p>
+              <div>
+                <img src="./resources/images/icon-calendar.svg">
+                <p>25 aug 2021</p>
               </div>
-              
-              <div class="special_food_cards">
-                <dt>Corrèze Pan-seared Veal Liver</dt>
-                <dd>Olive oil mashed potato, onion jus</dd>
-                <p class="dollar-value">$89</p>
-              </div>
-      
-              <div class="special_food_cards">
-                <dt>Grilled Veal Filet Mignon</dt>
-                <dd>Pumpkin, endives with hazelnuts</dd>
-                <p class="dollar-value">$89</p>
-              </div>
-              
-              <div class="special_food_cards">
-                <dt>Tender Octopus and Fennel</dt>
-                <dd>Citrus, wild rocket condiment</dd>
-                <p class="dollar-value">$89</p>
-              </div>
-              
-              <div class="special_food_cards">
-                <dt>Viennese Veal Cutlet</dt>
-                <dd>Ricotta and spinach gnocchi, Caccio de Pepe</dd>
-                <p class="dollar-value">$89</p>
-              </div>
-            </dl>
-          </div>
-        </section>
+            </div>
+            <h4>Designing With Code A Modern Approach To Development</h4>
+            <a href="#">Read more</a>
+          </article>
+        </div>
+        <div class="our-blog__footer">
+          <img src="./resources/images/imgbrand3.png">
+          <img src="./resources/images/imgbrand4.png">
+          <img src="./resources/images/imgbrand5.png">
+          <img src="./resources/images/imgbrand6.png">
+          <img src="./resources/images/imgbrand1.png">
+          <img src="./resources/images/imgbrand2.png">
+        </div>
+      </section>
     </main>
-     <footer class="footer">
-    <img src="" alt="The logo of Kababi">
-  </footer>
+    <!-- FOOTER  -->
+    <footer class="footer">
+      <img src="./resources/images/logo2@2x.png" alt="The logo of Kababi" class="footer__kababi-logo">
+      <div class="footer__link-section">
+        <div class="footer__link-section__box">
+          <h3>About</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">The Setting</a></li>
+            <li><a href="#">The Suites</a></li>
+            <li><a href="#">Food Lists</a></li>
+          </ul>
+        </div>
+        <div class="footer__link-section__box">
+          <h3>Facilities</h3>
+          <ul>
+            <li><a href="#">The Fontus Spa</a></li>
+            <li><a href="#">Experiences</a></li>
+            <li><a href="#">Private Functions</a></li>
+            <li><a href="#">Gallery, Events</a></li>
+            <li><a href="#">Special Offers</a></li>
+          </ul>
+        </div>
+        <div class="footer__link-section__box footer__link-section__box--newsletters">
+          <h3>Newletters</h3>
+          <p>Dolor sit amet consectetur adipliscing elit sed do eiusmod tempor incidunt labore et dolore</p>
+          <form action="post">
+            <label for="user_mail">Your email</label>
+            <input type="email" id="user_mail" placeholder="Enter Email Address">
+            <button type="submit"><img src="./resources/images/icon-arrow.svg"></button>
+          </form>
+        </div>
+        <div class="footer__link-section__box">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="#"><img src="./resources/images/icon-map.svg"> 56 Main Street, D-Block, 2nd Floor,</a></li>
+            <li><a href="#"><img src="./resources/images/icon-mail.svg"> support@gmail.com</a></li>
+            <li><a href="#"><img src="./resources/images/icon-telephone.svg"> +012 (345) 67 899</a></li>
+            <li><a href="#"><img src="./resources/images/icon-clock.svg"> 08 am - 06 pm</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr>
+      <img class="particular" src="./resources/images/iconup@2x.png">
+
+      <div class="footer__footer">
+        <p>
+          Copyright © 2021 The Kabibi - Restaurant HTML Template. Designed by <b>Themesflat</b>
+        </p>
+        <ul class="footer__footer__social-media">
+          <li><a href="#"><img src="./resources/images/icon-facebook.svg"></a></li>
+          <li><a href="#"><img src="./resources/images/icon-twitter.svg"></a></li>
+          <li><a href="#"><img src="./resources/images/icon-youtube.svg"></a></li>
+          <li><a href="#"><img src="./resources/images/icon-linkedin.svg"></a></li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      const menuHamburger = document.querySelector(".menu-hamburger")
+      const navLinks = document.querySelector(".section-nav__main-nav")
+
+      menuHamburger.addEventListener('click',()=>{
+      navLinks.classList.toggle('mobile-menu')
+      })
+    </script>
   </body>
 </html>

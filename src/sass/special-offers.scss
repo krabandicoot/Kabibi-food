@@ -1,0 +1,87 @@
+@import 'variable.scss';
+
+.special_offers_titles{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-beige;
+    font-family: $font-family-title;
+    font-weight: 300;
+    position: relative;
+    padding-bottom: 100px;
+    h2{
+        font-size: $font-size-h2;
+        margin: 15px;
+        margin-top: 80px;
+        margin-left: -450px;
+        text-transform: uppercase;
+        color: $gold;
+        opacity: 15%;
+    }
+    h3{
+        font-size: $font-size-h3;
+        margin-top: -130px;
+        text-align: center;
+        align-items: center;
+        text-transform: uppercase;
+        color: $dark;
+        opacity: 100%;
+    }
+    .special_offers_bread{
+        position: absolute;
+        right: -30px;
+        height: 865px;
+        top: 0px
+    }
+    .special_offers_meat{
+        position: absolute;
+        left: 0px;
+        height: 500px;
+        top: 500px;
+        
+    }
+}
+.special_food{
+    display: grid;
+    background-color: $background-beige;
+    padding-bottom: 100px;
+    dl{
+        display: flex;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 12px;
+    }
+
+    .special_food_cards{
+        background-color: $white;
+        border-radius: 5px;
+        padding: 25px 0px 25px 25px;
+        margin: 10px;
+        position: relative;
+        dt{
+            font-size: 1rem;
+            margin-right: 0px;
+        }
+        dd{
+            font-size: 0.8rem;
+            margin-right: 0px;
+        }
+        .dollar-value{
+            font-size: 2rem;
+            color: $gold;
+            position: absolute;
+            right: 10px;
+            top: 25px;
+        }
+    }
+    .special_food_cards:hover{
+        border: $gold dashed;
+    }
+    
+    
+}

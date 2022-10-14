@@ -1,0 +1,305 @@
+/* ---------- FONT ---------- */
+/* Import */
+@font-face {
+  font-family: Forum;
+  src: url(../font/Forum-Regular.otf);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../font/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Bellefair;
+  src: url(../font/Bellefair-Regular.ttf);
+}
+/* ---------- VARIABLES ---------- */
+/* Color */
+/* Background color */
+/* Font size */
+body {
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+/* ---------- VARIABLES ---------- */
+/* Color */
+/* Background color */
+/* Font size */
+.about_us .about_us_imgzone {
+  display: flex;
+}
+.about_us .about_us_imgzone img {
+  height: 20vh;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about_us .about_us_imgzone .img_crepe {
+  width: auto;
+  height: 20vh;
+}
+.about_us .about_us_imgzone .img_egg {
+  width: auto;
+  height: 15vh;
+}
+.about_us .about_us_imgzone .img_salad {
+  width: auto;
+  height: 40vh;
+  padding: 0px;
+  border: solid #ffffff;
+  border-radius: 50%;
+  border-width: 20px;
+  margin-top: -120px;
+}
+.about_us .about_us_textzone {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Forum;
+  font-weight: 300;
+  padding-bottom: 250px;
+  position: relative;
+}
+.about_us .about_us_textzone h2 {
+  font-size: 10rem;
+  margin: 15px;
+  margin-top: 80px;
+  margin-left: -450px;
+  text-transform: uppercase;
+  color: #c8a96a;
+  opacity: 15%;
+}
+.about_us .about_us_textzone h3 {
+  font-size: 2.5rem;
+  margin-top: -130px;
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #1d1d1d;
+  opacity: 100%;
+}
+.about_us .about_us_textzone .about_us_logo {
+  width: 120px;
+  position: absolute;
+  top: 80px;
+  right: 70px;
+}
+.about_us .about_us_description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  margin: 80px 50px 0px 50px;
+}
+.about_us .about_us_description .about_us_employee {
+  width: 300px;
+}
+.about_us .about_us_description .about_us_description_text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 350px;
+}
+.about_us .about_us_description .about_us_description_text p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: #1d1d1d;
+  margin-bottom: 30px;
+  margin-left: 40px;
+}
+.about_us .about_us_description a {
+  text-decoration: none;
+  font-size: 1rem;
+  text-decoration: none;
+  font-family: Montserrat;
+  margin-left: 40px;
+}
+.about_us .about_us_description a a:visited {
+  text-decoration: none;
+}
+.about_us .about_us_description button {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #c8a96a;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5%;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+}
+.about_us .about_us_description button img {
+  width: 20px;
+  filter: invert(1);
+  margin-left: 10px;
+}
+
+/* ---------- VARIABLES ---------- */
+/* Color */
+/* Background color */
+/* Font size */
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/img-background.jpg");
+  background-size: cover;
+  font-family: Times, serif;
+  padding-bottom: 250px;
+}
+.category h2 {
+  font-size: 10rem;
+  margin: 15px;
+  margin-top: 80px;
+  margin-left: -450px;
+  text-transform: uppercase;
+  color: #c8a96a;
+  opacity: 15%;
+}
+.category h3 {
+  font-size: 2.5rem;
+  margin-top: -130px;
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #1d1d1d;
+  opacity: 100%;
+}
+.category p {
+  justify-self: center;
+  font-family: Montserrat;
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1d1d1d;
+  opacity: 100%;
+}
+.category ul {
+  display: flex;
+  column-gap: 30px;
+  padding: 5px;
+  margin-top: 80px;
+  align-items: center;
+  align-content: center;
+}
+.category ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 5px;
+  margin: auto;
+  background-color: #ffffff;
+  width: 150px;
+  height: 200px;
+}
+.category ul li img {
+  width: 50px;
+}
+.category ul li h4 {
+  font-size: 1.5rem;
+  font-family: Montserrat;
+}
+.category ul li:hover {
+  background-color: #c8a96a;
+}
+.category ul li:hover img {
+  filter: brightness(0) invert(1);
+}
+.category ul li:hover h4 {
+  color: #ffffff;
+}
+
+/* ---------- VARIABLES ---------- */
+/* Color */
+/* Background color */
+/* Font size */
+.special_offers_titles {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #faf6f0;
+  font-family: Forum;
+  font-weight: 300;
+  position: relative;
+  padding-bottom: 100px;
+}
+.special_offers_titles h2 {
+  font-size: 10rem;
+  margin: 15px;
+  margin-top: 80px;
+  margin-left: -450px;
+  text-transform: uppercase;
+  color: #c8a96a;
+  opacity: 15%;
+}
+.special_offers_titles h3 {
+  font-size: 2.5rem;
+  margin-top: -130px;
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #1d1d1d;
+  opacity: 100%;
+}
+.special_offers_titles .special_offers_bread {
+  position: absolute;
+  right: -30px;
+  height: 865px;
+  top: 0px;
+}
+.special_offers_titles .special_offers_meat {
+  position: absolute;
+  left: 0px;
+  height: 500px;
+  top: 500px;
+}
+
+.special_food {
+  display: grid;
+  background-color: #faf6f0;
+  padding-bottom: 100px;
+}
+.special_food dl {
+  display: flex;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 12px;
+}
+.special_food .special_food_cards {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 25px 0px 25px 25px;
+  margin: 10px;
+  position: relative;
+}
+.special_food .special_food_cards dt {
+  font-size: 1rem;
+  margin-right: 0px;
+}
+.special_food .special_food_cards dd {
+  font-size: 0.8rem;
+  margin-right: 0px;
+}
+.special_food .special_food_cards .dollar-value {
+  font-size: 2rem;
+  color: #c8a96a;
+  position: absolute;
+  right: 10px;
+  top: 25px;
+}
+.special_food .special_food_cards:hover {
+  border: #c8a96a dashed;
+}
+
+/*# sourceMappingURL=style.css.map */

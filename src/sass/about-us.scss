@@ -1,0 +1,115 @@
+@import 'variable.scss';
+
+.about_us{
+    .about_us_imgzone{
+        display: flex;
+        img{
+            height: 20vh;
+            width: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .img_crepe{
+            width: auto;
+            height: 20vh;
+        }
+        .img_egg{
+            width: auto;
+            height: 15vh;
+        }
+        .img_salad{
+            width: auto;
+            height: 40vh;
+            padding: 0px;
+            border:solid $white;
+            border-radius: 50%;  
+            border-width: 20px;
+            margin-top: -120px;
+        }
+    }
+    .about_us_textzone{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: $font-family-title;
+        font-weight: 300;
+        padding-bottom: 250px;
+        position: relative;
+        h2{
+            font-size: $font-size-h2;
+            margin: 15px;
+            margin-top: 80px;
+            margin-left: -450px;
+            text-transform: uppercase;
+            color: $gold;
+            opacity: 15%;
+        }
+        h3{
+            font-size: $font-size-h3;
+            margin-top: -130px;
+            text-align: center;
+            align-items: center;
+            text-transform: uppercase;
+            color: $dark;
+            opacity: 100%;
+        }
+        .about_us_logo{
+            width:120px;
+            position: absolute;
+            top: 80px;
+            right: 70px;
+        }
+    }
+    .about_us_description{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction:row;
+        margin: 80px 50px 0px 50px;
+        .about_us_employee{
+            width:300px;
+        }
+        .about_us_description_text{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 350px;
+            p{
+                font-size: 1.3rem;
+                line-height: 2rem;
+                color: $dark;
+                margin-bottom: 30px;
+                margin-left: 40px;
+            }
+        }
+        a{
+        text-decoration: none;
+        font-size: 1rem;
+        text-decoration: none;
+        font-family: $font-family-subtitle;
+        margin-left: 40px;
+            a:visited{
+            text-decoration: none;
+            }
+        }
+        button{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: $gold;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 5%;
+            color: $white;
+            padding: 15px;
+            text-align: center;
+            img{
+                width: 20px;
+                filter: invert(1);
+                margin-left: 10px;
+            }
+        }
+    }
+}
